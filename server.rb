@@ -63,7 +63,7 @@ before do
   @articles = read('public/articles.csv')
 end
 
-get '/index' do
+get '/' do
    erb :rachel_index
  end
 
@@ -80,7 +80,7 @@ post '/new' do
       CSV.open('public/articles.csv', 'a') do |csv|
         csv << [@title, @url, @description]
       end
-      redirect '/index'
+      redirect '/'
     else
       session[:message]="We already know about this link. Try a different url."
       erb :new
