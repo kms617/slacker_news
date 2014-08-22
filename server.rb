@@ -54,6 +54,7 @@ def save_article(url, title, description)
   redis = get_connection
   redis.rpush("slacker:articles", article.to_json)
 end
+
 ####################################################
 #                   ROUTES
 ####################################################
