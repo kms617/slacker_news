@@ -1,0 +1,10 @@
+
+         <% @articles.each do |article| %>
+          <a href="<%= article["url"]%>" target="_blank"><%= article["title"] %></a>
+        </h3>
+        <cite class = "search-result-source">
+          <a href="<%= article["url"]%>" target="_blank"><%= article["url"]%></a></cite>
+        <span><%= article["description"] %></span></br>
+        <% end %>
+
+

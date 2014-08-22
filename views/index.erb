@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+   <div class="navigation-container">
+   <ul class="nav">
+    <li>
+    <a href="#">Hacker News</a>
+    </li>
+    <li>
+    <a href="#">new</a>
+    </li>
+    <li>
+    <a href="#">comments</a>
+    </li>
+    <li>
+    <a href="#">show</a>
+    </li>
+    <li>
+    <a href="#">ask</a>
+    </li>
+    <li>
+    <a href="#">jobs</a>
+    </li>
+    <li>
+    <a href="#">submit</a>
+    </li>
+    <li>
+    <a href="#">login</a>
+    </li>
+ </ul>
+ <div class="filters-container">
+</div>
+<div class="main-container">
+  <ol class="search-result-list">
+    <li>
+      <div class="search-result">
+        <h3 class="search-result-title">
+          <a href="https://www.firebase.com/blog/2013-08-15-firebase-leaves-beta-today.html"><%= @articles['title'] %></a>
+        </h3>
+        <cite class = "search-result-source"><%= @articles['url']%></cite>
+        <span><% @articles['description']</span>
+      </div>
+    </li>
+<div class="bottom-navigation-container">
+   <ul class="bottom">
+    <li>
+    <a href="#">Guidelines</a>
+    </li>
+    <li>
+    <a href="#">FAQ</a>
+    </li>
+    <li>
+    <a href="#">Lists</a>
+    </li>
+    <li>
+    <a href="#">Bookmarklet</a>
+    </li>
+    <li>
+    <a href="#">DMCA</a>
+    </li>
+    <li>
+    <a href="#">News News</a>
+    </li>
+    <li>
+    <a href="#">Bugs and Feature Requests</a>
+    </li>
+    <li>
+    <a href="#">Y Combinator</a>
+    </li>
+     <li>
+    <a href="#">Apply</a>
+    </li>
+    <li>
+    <a href="#">Library</a>
+    </li>
+     <li>
+    <a href="#">Contact</a>
+    </li>
+</ul>
+</div>
+<div class="search-container">
+ <form>
+  <label>Search</label>
+  <input type="search" name="search">
+  <input type="submit" value="Search">
+</form>
+</div>

@@ -1,0 +1,15 @@
+<form action="/new" method="post">
+  <h2>Submit an Article</h2>
+  <label for="t">Article Title:</label>
+  <input type="text" id="article_title" name="article_title" value= "<%=@title %>" required/></br>
+  <label for="t">Article URL:</label>
+  <input type="url" id="article_url" name="article_url" value= "<%=url %>"required/></br>
+  <label for="t">Article Description:</label>
+  <input type="text" id="article_description" name="article_description" input pattern=".{20,}" value= "<%=@description %>" required title="20 characters minimum">
+  <input type="submit">
+</form>
+
+<% if session[:message] %>
+  <p><%= session[:message] %></p>
+  <% session[:message]=nil %>
+<% end %>
